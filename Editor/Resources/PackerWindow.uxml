@@ -1,0 +1,60 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Tools/TextureChannelPacker/Editor/Resources/PackerWindowStyle.uss?fileID=7433441132597879392&amp;guid=f68742c6206a8834aa8af296a75a320a&amp;type=3#PackerWindowStyle" />
+    <ui:VisualElement name="Root" style="flex-grow: 1;">
+        <ui:ScrollView view-data-key="texChannelPackerScroll" mode="Vertical">
+            <ui:Label text="Texture Channel Packer&#10;" name="Title" style="font-size: 24px; -unity-text-align: middle-center; padding-bottom: 16px; white-space: normal; margin-top: 5px;" />
+            <ui:VisualElement name="Input" style="flex-grow: 0;">
+                <ui:VisualElement name="InputChannelR" style="flex-grow: 0; flex-direction: row; flex-wrap: nowrap; flex-shrink: 1; padding-left: 10px; padding-right: 5px; overflow: hidden; margin-top: 3px; margin-bottom: 3px;">
+                    <ui:VisualElement name="ChannelColor" style="flex-grow: 0; background-color: rgb(255, 0, 0); border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; width: auto; height: auto; min-width: 10px; min-height: 10px; padding-right: 0; margin-right: 5px; flex-shrink: 1; align-self: center;" />
+                    <ui:Label text="Red" name="ChannelLabel" tooltip="The output channel." style="-unity-text-align: middle-left; align-self: center; min-width: 40px;" />
+                    <uie:ObjectField label="From:" allow-scene-objects="false" type="UnityEngine.Texture, UnityEngine.CoreModule" name="TextureR" tooltip="Texture to read channel from." style="flex-grow: 1; flex-shrink: 1; min-width: 155px;" />
+                    <ui:EnumField value="R" type="Lasriel.TextureChannelPacker.Editor.ColorChannels, Lasriel.TextureChannelPacker.Editor" name="ChannelR" tooltip="Color channel to copy from the source texture." class="tex-channel" />
+                    <ui:Toggle label="Invert" name="InvertR" tooltip="Invert the source channel?" style="flex-shrink: 1; flex-grow: 0; min-width: 55px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="InputChannelG" style="flex-grow: 0; flex-direction: row; flex-wrap: nowrap; flex-shrink: 1; align-items: center; padding-left: 10px; padding-right: 5px; overflow: hidden; margin-top: 3px; margin-bottom: 3px;">
+                    <ui:VisualElement name="ChannelColor" style="flex-grow: 0; background-color: rgb(0, 255, 0); border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; width: auto; height: auto; min-width: 10px; min-height: 10px; padding-right: 0; margin-right: 5px;" />
+                    <ui:Label text="Green" name="ChannelLabel" tooltip="The output channel." style="-unity-text-align: middle-left; align-self: center; min-width: 40px;" />
+                    <uie:ObjectField label="From:" allow-scene-objects="false" type="UnityEngine.Texture, UnityEngine.CoreModule" name="TextureG" tooltip="Texture to read channel from." style="flex-grow: 1; flex-shrink: 1; min-width: 155px;" />
+                    <ui:EnumField value="R" type="Lasriel.TextureChannelPacker.Editor.ColorChannels, Lasriel.TextureChannelPacker.Editor" name="ChannelG" tooltip="Color channel to copy from the source texture." class="tex-channel" />
+                    <ui:Toggle label="Invert" name="InvertG" tooltip="Invert the source channel?" style="flex-shrink: 1; flex-grow: 0; min-width: 55px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="InputChannelB" style="flex-grow: 0; flex-direction: row; flex-wrap: nowrap; flex-shrink: 1; align-items: center; padding-left: 10px; padding-right: 5px; overflow: hidden; margin-top: 3px; margin-bottom: 3px;">
+                    <ui:VisualElement name="ChannelColor" style="flex-grow: 0; background-color: rgb(0, 0, 255); border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; width: auto; height: auto; min-width: 10px; min-height: 10px; padding-right: 0; margin-right: 5px;" />
+                    <ui:Label text="Blue" name="ChannelLabel" tooltip="The output channel." style="-unity-text-align: middle-left; align-self: center; min-width: 40px;" />
+                    <uie:ObjectField label="From:" allow-scene-objects="false" type="UnityEngine.Texture, UnityEngine.CoreModule" name="TextureB" tooltip="Texture to read channel from." style="flex-grow: 1; flex-shrink: 1; min-width: 155px;" />
+                    <ui:EnumField value="R" type="Lasriel.TextureChannelPacker.Editor.ColorChannels, Lasriel.TextureChannelPacker.Editor" name="ChannelB" tooltip="Color channel to copy from the source texture." class="tex-channel" />
+                    <ui:Toggle label="Invert" name="InvertB" tooltip="Invert the source channel?" style="flex-shrink: 1; flex-grow: 0; min-width: 55px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="InputChannelA" style="flex-grow: 0; flex-direction: row; flex-wrap: nowrap; flex-shrink: 1; align-items: center; padding-left: 10px; padding-right: 5px; overflow: hidden; margin-top: 3px; margin-bottom: 3px;">
+                    <ui:VisualElement name="ChannelColor" style="flex-grow: 0; background-color: rgb(0, 0, 0); border-top-left-radius: 100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px; border-bottom-left-radius: 100px; width: auto; height: auto; min-width: 10px; min-height: 10px; padding-right: 0; margin-right: 5px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px;" />
+                    <ui:Label text="Alpha" name="ChannelLabel" tooltip="The output channel." style="-unity-text-align: middle-left; align-self: center; min-width: 40px;" />
+                    <uie:ObjectField label="From:" allow-scene-objects="false" type="UnityEngine.Texture, UnityEngine.CoreModule" name="TextureA" tooltip="Texture to read channel from." style="flex-grow: 1; flex-shrink: 1; min-width: 155px;" />
+                    <ui:EnumField value="R" type="Lasriel.TextureChannelPacker.Editor.ColorChannels, Lasriel.TextureChannelPacker.Editor" name="ChannelA" tooltip="Color channel to copy from the source texture." class="tex-channel" />
+                    <ui:Toggle label="Invert" name="InvertA" tooltip="Invert the source channel?" style="flex-shrink: 1; flex-grow: 0; min-width: 55px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Output" style="flex-grow: 1; overflow: hidden;">
+                <ui:VisualElement name="SettingsContainer" style="flex-grow: 0; margin-top: 8px; margin-bottom: 3px; background-color: rgba(255, 255, 255, 0.08); padding-right: 5px; padding-left: 5px; margin-left: 5px; margin-right: 5px; padding-top: 5px; padding-bottom: 5px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgba(0, 0, 0, 0.51); border-right-color: rgba(0, 0, 0, 0.51); border-top-color: rgba(0, 0, 0, 0.51); border-bottom-color: rgba(0, 0, 0, 0.51); overflow: hidden;">
+                    <ui:Label text="Settings" name="SettingsLabel" enable-rich-text="false" style="-unity-text-align: middle-center; margin-top: 3px; margin-bottom: 3px; font-size: 16px;" />
+                    <ui:EnumField label="Format" type="Lasriel.TextureChannelPacker.Editor.PackerFormats, Lasriel.TextureChannelPacker.Editor" name="SettingFormat" tooltip="Format that the generated texture will be saved as." enabled="true" style="margin-left: 17px; margin-top: 3px; margin-bottom: 3px;" />
+                    <ui:EnumField label="Resolution" value="m_1024x1024" type="Lasriel.TextureChannelPacker.Editor.PackerResolutions, Lasriel.TextureChannelPacker.Editor" name="SettingResolution" tooltip="Packed texture size in pixels. If inputs are larger or smaller, overflowing pixels will be ignored." style="margin-left: 17px; margin-top: 3px; margin-bottom: 3px;" />
+                </ui:VisualElement>
+                <ui:Button text="Pack" name="GenerateButton" style="height: 25px; margin-left: 6px; margin-right: 6px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Preview" style="flex-grow: 1; margin-top: 5px;">
+                <ui:VisualElement name="PreviewContainer" style="flex-grow: 0; height: auto; margin-top: 8px; margin-right: 5px; margin-bottom: 3px; margin-left: 5px; padding-top: 5px; padding-right: 5px; padding-bottom: 12px; padding-left: 5px; background-color: rgba(255, 255, 255, 0.08); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-left-color: rgba(0, 0, 0, 0.51); border-right-color: rgba(0, 0, 0, 0.51); border-top-color: rgba(0, 0, 0, 0.51); border-bottom-color: rgba(0, 0, 0, 0.51); background-image: none; overflow: hidden;">
+                    <ui:Label text="Preview&#10;" name="PreviewLabel" enable-rich-text="false" style="font-size: 16px; -unity-text-align: middle-center; margin-top: 3px; margin-bottom: 3px;" />
+                    <ui:Toggle label="Show Transparency" name="TransparencyToggle" value="false" tooltip="Does preview show texture transparency?" style="align-self: center; margin-bottom: 5px;" />
+                    <uie:Toolbar name="PreviewModeToolbar" tooltip="Color channel preview mode." style="flex-grow: 0; flex-shrink: 1; justify-content: center; flex-direction: row; align-items: stretch; align-self: center; border-top-width: 1px; border-right-width: 1px; border-left-width: 1px;">
+                        <uie:ToolbarToggle label="RGB" name="PreviewModeRGB" class="preview-mode-toggle" style="border-left-width: 0;" />
+                        <uie:ToolbarToggle label="R" name="PreviewModeR" class="preview-mode-toggle" style="border-right-width: 1px; border-left-width: 0;" />
+                        <uie:ToolbarToggle label="G" name="PreviewModeG" class="preview-mode-toggle" style="border-right-width: 1px; border-left-width: 0;" />
+                        <uie:ToolbarToggle label="B" name="PreviewModeB" class="preview-mode-toggle" style="border-right-width: 1px; border-left-width: 0;" />
+                        <uie:ToolbarToggle label="A" name="PreviewModeA" class="preview-mode-toggle" style="border-left-width: 0; border-right-width: 0;" />
+                    </uie:Toolbar>
+                    <ui:VisualElement name="PreviewTextureContainer" style="flex-grow: 1; min-height: auto; margin-top: 5px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

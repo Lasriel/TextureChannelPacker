@@ -1,0 +1,11 @@
+{
+    "name": "moe.lasriel.texture-channel-packer",
+    "version": "1.0.0",
+    "displayName": "Texture Channel Packer",
+    "description": "Editor tool for taking RGBA color channels from source textures and packing them into one texture.",
+    "unity": "2022.3",
+    "author": {
+      "name": "Lasriel",
+      "url": "https://lasriel.moe"
+    }
+  }

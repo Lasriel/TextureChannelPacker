@@ -1,0 +1,50 @@
+ObjectField > .unity-label {
+    min-width: 35px;
+    max-width: 65px;
+    -unity-text-align: upper-left;
+    margin-top: 0;
+}
+
+EnumField > .unity-label {
+    min-width: 80px;
+}
+
+ObjectField > .unity-object-field__input {
+    min-width: 120px;
+    opacity: 1;
+}
+
+Toggle > .unity-label {
+    min-width: 38px;
+}
+
+.tex-channel > .unity-label {
+    display: none;
+    visibility: hidden;
+}
+
+.tex-channel > VisualElement {
+    min-width: 30px;
+}
+
+.preview-mode-toggle > .unity-toggle__input {
+    display: none;
+}
+
+.preview-mode-toggle > .unity-toggle__label {
+    min-width: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.preview-mode-toggle {
+    flex-grow: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    -unity-text-align: middle-center;
+    margin-left: 0;
+}
